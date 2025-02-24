@@ -16,9 +16,9 @@ h2{
     transform: translateX(-50%);
 }
 .refresh{
-    position: absolute;
+/*     position: absolute;
     top: 20px;
-    right: 30px;
+    right: 30px; */
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -28,11 +28,17 @@ h2{
     height: 3rem;
 
 }
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px auto;
+}
 #repeat {
-    position: absolute;
+/*     position: absolute;
     top: 20px;
     right: 50%;
-    transform: translateX(50%);
+    transform: translateX(50%); */
     appearance: none; /* Removes default browser styling */
     width: 3rem; /* Set width to ensure it's circular */
     height: 3rem; /* Set height to ensure it's circular */
@@ -58,16 +64,15 @@ h2{
     height: 40px;
 }
 .mic-toggle{
-    position: absolute;
-  /* display: block; */
+    position: relative;
+/*     position: absolute;
   top: 20px;
-  left: 30px;
+  left: 30px; */
   border: none;
    width: 3rem;
    height: 3rem;
    border-radius: 50%;
    background-color: rgba(255, 255, 255, 0.353);
-   margin-bottom:  4rem;
 }
 
 
@@ -83,7 +88,7 @@ h2{
     bottom: var(--pad);
     right: var(--pad);
     border-radius: 50%;
-}
+} 
 .mic-toggle:after{
     transition: 0.4s;
 }
@@ -273,7 +278,7 @@ main {
 }
 
 
-.install-prompt {
+/* .install-prompt {
     width: 100%;
     max-width: 290px;
     margin: auto;
@@ -316,15 +321,17 @@ main {
 #dismiss-btn {
     background-color: #f44336;
     color: white;
-}
+} */
 #install{
     background-color: rgb(84, 198, 84);
     border: none;
     border-radius: 50%;
     margin: 10px;
-    position: fixed;
-    padding: 5px;
+/*     position: fixed;
     top: 50%;
-    left: 20px;
+    left: 20px; */
+    width: 3rem;
+    height: 3rem;
+
     cursor: pointer;
 }
