@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المعين على التكرار</title>
+    <style>
+        
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <button class="refresh" ><img src="repeat.png" alt=""></button>
+
+        <select name="" id="repeat">
+            <option value="6">6</option>
+            <option value="12">12</option>
+            <option value="24">24</option>
+            <option value="36" selected>36</option>
+            <option value="48">48</option>
+        </select>
+
+        <button class="mic-toggle" id="mic"><img src="microphone.png" alt=""></button>
+    </header>
+
+
+    <main>
+        <div class="from-to">
+            <h4 style="margin-bottom: 50px; display: inline; padding: 5px 10px; border: 2px solid rgb(85, 236, 102); border-radius: 7px;" contenteditable="true"> من -- إلى -- </h4>
+        </div>
+
+        <div id="checkbox-container"></div>
+        <div id="customModal" style="display: none;">
+            <div class="modal-content">
+                <p>هل تريد حفظ المحفوظ؟</p>
+                <div class="modal-buttons">
+                    <button class="btn" onclick="handleResponse(true)">نعم</button>
+                    <button class="btn" onclick="handleResponse(false)">لا</button>
+                </div>
+            </div>
+        </div>
+        <div class="counter"><span class="checkCounter"></span>/<span class="selectedRepeat">36</span> </div>
+    </main>
+    <audio controls class="playback"></audio>
+    <script src="main.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
