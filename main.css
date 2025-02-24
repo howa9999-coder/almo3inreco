@@ -317,3 +317,14 @@ main {
     background-color: #f44336;
     color: white;
 }
+#install{
+    background-color: rgb(84, 198, 84);
+    border: none;
+    border-radius: 50%;
+    margin: 10px;
+    position: fixed;
+    padding: 5px;
+    top: 50%;
+    left: 20px;
+    cursor: pointer;
+}
