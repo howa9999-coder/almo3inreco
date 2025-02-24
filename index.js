@@ -10,7 +10,7 @@ if(navigator.serviceWorker){
 
 
 //INSATALL BUTTON
-/* const inst = document.querySelector('#install');
+const inst = document.querySelector('#install');
 window.addEventListener("beforeinstallprompt", (installEvent)=>{
   installEvent.preventDefault;
   inst.style.display ='block';
@@ -28,4 +28,4 @@ inst.addEventListener("click", ()=>{
           }
       }))
   }
-}) */
+}) 
